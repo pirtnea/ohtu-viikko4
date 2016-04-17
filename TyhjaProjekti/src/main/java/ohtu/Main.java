@@ -41,5 +41,9 @@ public class Main {
         
         System.out.println("");
         System.out.println("yhteensä: " + subs[0].getCount() + " tehtävää " + subs[0].getHours() + " tuntia");
+        
+        
+        
+
     }
 }
