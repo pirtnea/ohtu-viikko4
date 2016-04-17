@@ -3,7 +3,6 @@ package ohtu;
 import com.google.gson.Gson;
 import java.io.IOException;
 import java.io.InputStream;
-import ohtu.Submission;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.io.IOUtils;
@@ -33,9 +32,14 @@ public class Main {
         Submission[] subs = mapper.fromJson(bodyText, Submission[].class);
 
         System.out.println("Oliot:");
+        System.out.println("opiskelijanumero " + subs[0].getStudent_number());
+        System.out.println("");
+        
         for (Submission submission : subs) {
             System.out.println(submission);
         }
-
+        
+        System.out.println("");
+        System.out.println("yhteensä: " + subs[0].getCount() + " tehtävää " + subs[0].getHours() + " tuntia");
     }
 }

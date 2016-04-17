@@ -2,7 +2,7 @@ package ohtu;
 
 public class Submission {
     private String student_number;
-    private Sring week;
+    private String week;
     private String hours;
     private String a1;
     private String a2;
@@ -179,7 +179,7 @@ public class Submission {
 
     @Override
     public String toString() {
-        return "viikko " + week + ": tehtyjä tehtäviä yhteensä: " + count + ", aikaa kului " + hours + " tuntia, tehdyt tehtävät: " + completedExercises();
+        return " viikko " + week + ": tehtyjä tehtäviä yhteensä: " + count + ", aikaa kului " + hours + " tuntia, tehdyt tehtävät: " + completedExercises();
     }
     
 }
